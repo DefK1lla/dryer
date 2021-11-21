@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/slick.css">
+</head>
+
+<body>
+    <!-- SVG sprites -->
+    <svg display="none">
+        <symbol id="avatar" viewBox="0 0 128 128">
+            <g>
+                <path
+                    d="M30,49c0,18.7,15.3,34,34,34s34-15.3,34-34S82.7,15,64,15S30,30.3,30,49z M90,49c0,14.3-11.7,26-26,26S38,63.3,38,49   s11.7-26,26-26S90,34.7,90,49z" />
+                <path
+                    d="M24.4,119.4C35,108.8,49,103,64,103s29,5.8,39.6,16.4l5.7-5.7C97.2,101.7,81.1,95,64,95s-33.2,6.7-45.3,18.7L24.4,119.4z" />
+            </g>
+        </symbol>
+
+        <symbol id="search" viewBox="0 0 612 612">
+            <g>
+                <path d="M382.5,0C255.759,0,153,102.759,153,229.5c0,53.034,18.149,101.707,48.367,140.568L8.415,563.021
+                    C2.812,568.625,0,575.949,0,583.312c0,7.344,2.812,14.688,8.415,20.292C14,609.208,21.343,612,28.688,612
+                    s14.688-2.792,20.272-8.396l192.971-192.972C280.793,440.851,329.467,459,382.5,459C509.241,459,612,356.241,612,229.5
+                    S509.241,0,382.5,0z M382.5,401.625c-94.917,0-172.125-77.208-172.125-172.125c0-94.917,77.208-172.125,172.125-172.125
+                    c94.917,0,172.125,77.208,172.125,172.125C554.625,324.417,477.417,401.625,382.5,401.625z" />
+            </g>
+        </symbol>
+    </svg>
+
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="header__logo-link" href="#">
+                        <img class="header__logo" src="img/logo.png" alt="logo">
+                    </a>
+
+                    <div class="header__menu">
+                        <button class="header__menu-btn">
+                            <span class="header__menu-line">menu</span>
+                        </button>
+
+                        <div class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Главная</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Каталог</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Услуги</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Новости</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">О компании</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+
+                            <a class="header__search" href="#">
+                                Поиск
+
+                                <svg class="header__icon">
+                                    <use xlink:href="#search"></use>
+                                </svg>
+                            </a>
+
+
+                            <a class="header__login" href="#">
+                                Вход
+
+                                <svg class="header__icon">
+                                    <use xlink:href="#avatar"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div> <!-- /.header__menu -->
+
+                    <a class="header__search" href="#">
+                        Поиск
+
+                        <svg class="header__icon">
+                            <use xlink:href="#search"></use>
+                        </svg>
+                    </a>
+
+                    <a class="header__login" href="#">
+                        Вход
+
+                        <svg class="header__icon">
+                            <use xlink:href="#avatar"></use>
+                        </svg>
+                    </a>
+                </div> <!-- /.header__inner -->
+            </div> <!-- /.container -->
+        </header>
+
+        <main class="main">
+            <!-- Intro -->
+            <section class="intro">
+                <div class="container">
+                    <div class="intro__inner">
+                        <div class="intro__slider">
+                            <div>
+                                <div class="intro__item">
+                                    <picture class="intro__img">
+                                        <source srcset="img/intro/item.png" type="image/png" media="(max-width:992px)">
+                                        <img src="img/intro/item1.png" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="intro__item">
+                                    <div class="intro__img">
+                                        <img src="img/intro/item2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="intro__item">
+                                    <div class="intro__img">
+                                        <img src="img/intro/item3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="intro__content">
+                            <h4 class="intro__subtitle">Идеальное решение</h4>
+                            <h1 class="intro__title">Антивандальные автоматические
+                                сушилки Crabb</h1>
+
+                            <p class="intro__text">Высокоскоростные, эргономичные, с двойным HEPA-фильтром</p>
+                        </div>
+                    </div> <!-- /.intro__inner -->
+                </div> <!-- /.container -->
+            </section> <!-- /.intro -->
+
+
+            <!-- Products -->
+            <section class="products">
+                <div class="container">
+                    <div class="products__inner">
+                        <div class="products__content">
+
+                            <div class="products__body">
+                                <h4 class="products__subtitle">Основные категории</h4>
+                                <h2 class="products__title">Основные категории</h2>
+
+                                <h5 class="products__list-title">Производство и поставка оборудования</h5>
+
+                                <ul class="products__list">
+                                    <li class="products__item">Сушилки для рук</li>
+                                    <li class="products__item">Дозаторы</li>
+                                    <li class="products__item">Фены для волос</li>
+                                    <li class="products__item">Пеленальные столики</li>
+                                    <li class="products__item">Сенсорные смесители</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="products__slider">
+                            <div class="products__slider-items">
+                                <div class="products__slider-item">
+                                    <div class="products__img">
+                                        <img src="img/products/item1.png" alt="">
+                                    </div>
+
+                                    <div class="products__info">
+                                        <h6 class="products__name">
+                                            Автоматическая сушилка
+                                            для рук Crabb 05
+                                        </h6>
+
+                                        <p class="products__size">
+                                            Размеры: 685х300х210 мм
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="products__slider-item">
+                                    <div class="products__img">
+                                        <img src="img/products/item2.png" alt="">
+                                    </div>
+
+                                    <div class="products__info">
+                                        <h6 class="products__name">
+                                            Автоматическая сушилка
+                                            для рук Crabb 05
+                                        </h6>
+
+                                        <p class="products__size">
+                                            Размеры: 685х300х210 мм
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="products__slider-item">
+                                    <div class="products__img">
+                                        <img src="img/products/item3.png" alt="">
+                                    </div>
+
+                                    <div class="products__info">
+                                        <h6 class="products__name">
+                                            Автоматическая сушилка
+                                            для рук Crabb 05
+                                        </h6>
+
+                                        <p class="products__size">
+                                            Размеры: 685х300х210 мм
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="products__slider-item">
+                                    <div class="products__img">
+                                        <img src="img/products/item4.png" alt="">
+                                    </div>
+
+                                    <div class="products__info">
+                                        <h6 class="products__name">
+                                            Автоматическая сушилка
+                                            для рук Crabb 05
+                                        </h6>
+
+                                        <p class="products__size">
+                                            Размеры: 685х300х210 мм
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="products__slider-item">
+                                    <div class="products__img">
+                                        <img src="img/products/item4.png" alt="">
+                                    </div>
+
+                                    <div class="products__info">
+                                        <h6 class="products__name">
+                                            Автоматическая сушилка
+                                            для рук Crabb 05
+                                        </h6>
+
+                                        <p class="products__size">
+                                            Размеры: 685х300х210 мм
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> <!-- /.products__slider-items -->
+                        </div> <!-- /.products__slider -->
+                    </div> <!-- /.products__inner -->
+                </div> <!-- /.container -->
+            </section> <!-- /.products -->
+        </main>
+    </div> <!-- /.wrapper -->
+
+
+    <script src="js/libs/jquery-3.6.0.min.js"></script>
+    <script src="js/libs/slick.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
